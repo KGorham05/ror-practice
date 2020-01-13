@@ -955,3 +955,68 @@ Processing by ArticlesController#show as HTML
 Completed 200 OK in 58ms (Views: 56.8ms | ActiveRecord: 0.2ms | Allocations: 5850)
 
 
+Started GET "/" for ::1 at 2020-01-13 11:26:58 -0800
+  [1m[35m (8.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (Duration: 10.6ms | Allocations: 818)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 296ms (Views: 275.0ms | ActiveRecord: 0.0ms | Allocations: 13168)
+
+
+Started GET "/articles" for ::1 at 2020-01-13 11:27:08 -0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.4ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (Duration: 9.3ms | Allocations: 4606)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 55.4ms | ActiveRecord: 1.4ms | Allocations: 10887)
+
+
+Started GET "/articles/new" for ::1 at 2020-01-13 11:27:10 -0800
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 63.4ms | Allocations: 4324)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.0ms | Allocations: 9753)
+
+
+Started GET "/articles" for ::1 at 2020-01-13 11:31:39 -0800
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:11
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 847)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.2ms | Allocations: 6163)
+
+
+Started GET "/articles/new" for ::1 at 2020-01-13 11:37:56 -0800
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 833)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 40.1ms | ActiveRecord: 0.0ms | Allocations: 9732)
+
+
+Started POST "/articles" for ::1 at 2020-01-13 11:38:02 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"vAaFI9vtGDiR0iKIVAT9lDT5SzMTHDrO7zxRVy0BmtMGGAR6xwkPJBBRQW5L8y1s14rXfXZj5NVtbIMN86rGBw==", "article"=>{"title"=>"", "text"=>"somehting with no title"}, "commit"=>"Save Article"}
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 713)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 51ms (Views: 48.9ms | ActiveRecord: 0.0ms | Allocations: 7378)
+
+
+Started POST "/articles" for ::1 at 2020-01-13 11:40:00 -0800
+Processing by ArticlesController#create as HTML
+  Parameters: {"authenticity_token"=>"kv+vWSxOE7IL1iZ9YocPd5N1d9t4uvPB4gRUIlM/8g6WCjD0N+0PNqUiGfSVy5YRhUBRmedlj3T0+0BdggQY1Q==", "article"=>{"title"=>"", "text"=>"somehting with no title"}, "commit"=>"Save Article"}
+  Rendering articles/new.html.erb within layouts/application
+  Rendered articles/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1358)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 46ms (Views: 44.6ms | ActiveRecord: 0.0ms | Allocations: 8661)
+
+
